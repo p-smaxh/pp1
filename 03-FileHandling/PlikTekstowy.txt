@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Plik danych, plik komputerowy, zwykle krótko plik – uporządkowany zbiór danych o skończonej długości, posiadający szereg atrybutów i stanowiący dla użytkownika systemu operacyjnego całość. Nazwa pliku nie jest jego częścią, lecz jest przechowywana w systemie plików.
 
 Plik tekstowy (ang. text file) – plik zawierający dane w postaci alfanumerycznej.
@@ -5,4 +6,13 @@ Pojęcie pliku tekstowego, wprowadzono w początkach rozwoju technik komputerowy
 
 Plik binarny – plik o dowolnej zawartości, oznacza wszystkie pliki poza plikami tekstowymi zawierającymi tekst zapisany w ustalonym sposobie kodowania znaków drukarskich, wraz z kodami sterującymi, w tym także kod znaku końca pliku – ^Z.
 
+=======
+Plik danych, plik komputerowy, zwykle krótko plik – uporządkowany zbiór danych o skończonej długości, posiadający szereg atrybutów i stanowiący dla użytkownika systemu operacyjnego całość. Nazwa pliku nie jest jego częścią, lecz jest przechowywana w systemie plików.
+
+Plik tekstowy (ang. text file) – plik zawierający dane w postaci alfanumerycznej.
+Pojęcie pliku tekstowego, wprowadzono w początkach rozwoju technik komputerowych, gdy komputery współpracowały z tekstowymi urządzeniami do pobierania i drukowania tekstów takimi jak dalekopisy, drukarki tekstowe, czytniki kart dziurkowanych.
+
+Plik binarny – plik o dowolnej zawartości, oznacza wszystkie pliki poza plikami tekstowymi zawierającymi tekst zapisany w ustalonym sposobie kodowania znaków drukarskich, wraz z kodami sterującymi, w tym także kod znaku końca pliku – ^Z.
+
+>>>>>>> 5970d78a1d78821494f17747297257ac09bfaee5
 Niemal wszystkie języki programowania wysokiego poziomu posiadają oddzielne mechanizmy do obsługi plików tekstowych i binarnych.

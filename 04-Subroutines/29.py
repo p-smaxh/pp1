@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+>>>>>>> 5970d78a1d78821494f17747297257ac09bfaee5
 import math
 
 def med(tab):
@@ -38,3 +42,16 @@ print(len(tab2))
 print(tab2)
 print("Mediana: ", med(tab2))
 dom(tab2)
+<<<<<<< HEAD
+=======
+=======
+def suma_cyfr(x):
+    if x%10==x:
+        return x
+    else:
+        return suma_cyfr(x//10)+x%10
+    
+
+print(suma_cyfr(889))
+>>>>>>> 9a3019944d9c50f898a59b6327040f23e5df8a09
+>>>>>>> 5970d78a1d78821494f17747297257ac09bfaee5
