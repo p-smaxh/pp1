@@ -1,36 +1,25 @@
-class Ebook():
-    def __init__(self,title,author,pages):
-        self.title = title
-        self.author = author
-        self.pages = pages
-        self.status = 0
-        self.curr_page = 1
-    def show_page(self):
-        print(self.curr_page)
-    def open(self):
-        self.status = 1
-    def close(self):
-        self.status = 0
-    def show_status(self):
-        if self.status==0:
-            print("ksiazka zamknieta")
-        else: print(self.title,self.author,self.pages,self.curr_page)
-    def next_page(self):
-        if (self.curr_page<=self.pages):
-            self.curr_page+=1
-        else:
-            print("to juz ostatnia strona")
-    def prev_page(self):
-        if (curr_page>=1):
-            curr_page-=1
-        else:
-            print("jestes na pierwszej stronie")
-eb1 = Ebook("Pan Tadeusz", "Jan Brzechwa", 420)
-eb1.open()
-eb1.show_status()
-eb1.next_page()
-eb1.next_page()
-eb1.next_page()
-eb1.show_status()
-eb1.close()
-eb1.show_status()
+class Student():
+    def __init__(self,imie,nazwisko,albumNr):
+        self.imie = imie
+        self.nazwisko = nazwisko
+        self.albumNr = albumNr
+    def __str__(self):
+        return f"Imie Studenta:{self.imie} \nNazwisko:{self.nazwisko} \nNumer albumu:{self.albumNr}"
+    def __eq__(self,other):
+        return self.albumNr==other.albumNr
+    def __lt__(self,other):
+        return self.albumNr < other.albumNr
+
+s1 = Student("Anna","Tomaszewska",141820)
+s2 = Student("Wojciech", "Zbych", 201003)
+s3 = Student("Maja", "Kowalska", 153202)
+s4 = Student("Marek", "Migiel", 138600)
+lista = [s1,s2,s3,s4]
+for e in lista:
+    print(e)
+    print()
+print("-------------")
+lista.sort()
+for e in lista:
+    print(e)
+    print()

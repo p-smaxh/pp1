@@ -1,34 +1,18 @@
-class TV():
-    def __init__(self):
-        self.is_on = 0
-        self.channel_no = 1
-        self.channels = []
-    def on(self):
-        self.is_on = 1
-    def off(self):
-        self.is_on = 0
-    def set_channel(self,nr):
-        self.channel_no = nr
-    def show_status(self):
-        if self.is_on:
-            print("telewizor jest zalaczony, kanal ",self.channel_no," (",self.channels[self.channel_no-1],")")
-        else:
-            print("telewizor wylaczony")
-    def set_channels(self, ch):
-        self.channels = ch
-    def show_channels(self):
-        print("LISTA KANALUW TV:")
-        lengh = len(self.channels)
-        for x in range(0,lengh):
-            print(x+1,".",self.channels[x])
+import random
+class Tele():
+    def __init__(self,model,numer,operator):
+        self.model = model
+        self.numer = numer
+        self.operator = operator
+    def __str__(self):
+        return "model telefonu: "+self.model+"\n"+"numer telefonu: "+str(self.numer)+"\n"+"operator: "+self.operator
+    def dzwon(self,odbiorca):
+        print("Dzwonię pod numer... "+str(odbiorca))
+    def stanKonta(self):
+        print(str(self.numer)+", twój stan konta wynosi "+str(random.randint(10,20))+"zł, pozdrawiamy - "+self.operator)
 
-tv1 = TV()
-
-tv1.show_status()
-lista = ["TVP1","TVP2", "Polsat", "TVN", "Filmbox"]
-tv1.on()
-tv1.set_channels(lista)
-tv1.show_status()
-
-tv1.show_channels()
-
+tel1 = Tele("samsung s8",921387210,"Play")
+tel2 = Tele("jaTelefon 10",997223622,"Plus")
+print(tel1)
+tel1.dzwon(123987456)
+tel1.stanKonta()
